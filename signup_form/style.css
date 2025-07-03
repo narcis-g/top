@@ -1,0 +1,164 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Left Section - Image and Logo */
+.left-section {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px; /* Adjust as needed */
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.logo-overlay {
+    position: absolute;
+    top: 20%; /* Adjust as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark, semi-transparent background */
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo {
+    height: 80px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('Norse-Bold.otf') format('opentype');
+}
+
+.logo-text {
+    font-family: 'Norse-Bold', sans-serif;
+    font-size: 5rem;
+}
+
+/* Right Section - Form */
+.right-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.form-header {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form-header em {
+    font-style: italic;
+}
+
+.form-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.8rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #E5E7EB; /* Default border */
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3b82f6; /* Blue border on focus */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2); /* Subtle box-shadow */
+}
+
+input:invalid {
+    border-color: #ef4444; /* Red border for invalid input */
+}
+
+.create-account-btn {
+    background-color: #596D48; /* Specified button color */
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.create-account-btn:hover {
+    opacity: 0.9;
+}
+
+.login-section {
+    margin-top: 20px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.login-section a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-section a:hover {
+    text-decoration: underline;
+}
